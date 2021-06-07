@@ -1,0 +1,19 @@
+Database -->
+Name : db_hor
+
+1) Table admin:
+---------------
+4-columns :admin_id,name,username,password
+
+2) Table guest:
+---------------
+6-columns  : guest_id,firstname,middlename,lastname,address,contactno
+
+3) Table room:
+--------------
+4-columns  : room_id,room_type,price,photo
+
+4)Table transaction:
+--------------------
+12-column  : transaction_id,guest_id,room_id,room_no,extra_bed,status,
+             days,checkin,checkout,checkout_time,bill
