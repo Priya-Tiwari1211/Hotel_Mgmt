@@ -3,7 +3,7 @@ CREATE TABLE `admin` (
   `name` varchar(30) NOT NULL,
   `username` varchar(24) NOT NULL,
   `password` varchar(24) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) 
 
 INSERT INTO `admin` (`admin_id`, `name`, `username`, `password`) VALUES
 (1, 'Administrator', 'Admin', 'admin');
@@ -17,7 +17,7 @@ CREATE TABLE `guest` (
   `lastname` varchar(40) NOT NULL,
   `address` varchar(50) NOT NULL,
   `contactno` varchar(13) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+)
 
 
 
@@ -26,7 +26,7 @@ CREATE TABLE `room` (
   `room_type` varchar(50) NOT NULL,
   `price` varchar(11) NOT NULL,
   `photo` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) 
 
 
 INSERT INTO `room` (`room_id`, `room_type`, `price`, `photo`) VALUES
@@ -49,7 +49,7 @@ CREATE TABLE `transaction` (
   `checkout` date NOT NULL,
   `checkout_time` time NOT NULL,
   `bill` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+)
 
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`admin_id`);
